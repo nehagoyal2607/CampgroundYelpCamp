@@ -21,7 +21,8 @@ var indexRoutes = require("./routes/index"),
 // })
 // .then(() => console.log('Connected to DB!'))
 // .catch(error => console.log(error.message));
-var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp;
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp";
+
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
